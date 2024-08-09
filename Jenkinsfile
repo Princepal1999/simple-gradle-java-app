@@ -24,7 +24,7 @@ pipeline {
                     // Initialize the Gradle project
                     def gradleInitOutput = sh(script: '''
                         echo "Starting Gradle initialization"
-                        gradle init --type application --language java --java-version 17 --dsl groovy --new-api
+                        gradle init --type application --language java --java-version 11 --dsl groovy --new-api
                     ''', returnStdout: true).trim()
                     echo "Gradle initialization output:"
                     echo "${gradleInitOutput}"
