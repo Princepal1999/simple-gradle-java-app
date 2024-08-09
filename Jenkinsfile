@@ -83,4 +83,7 @@ pipeline {
         }
         failure {
             // Notify on pipeline failure
-            echo 'Pipeline faile
+            echo 'Pipeline failed!'
+        }
+    }
+}
